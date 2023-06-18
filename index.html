@@ -60,7 +60,7 @@
                 dataType:'json',
                 data:{'username':$('#username').val(),'content':$('#content').val()},
                 success:function(data){
-                    //data = {'code':0,'msg':'评论成功'}
+                    data = {'code':0,'msg':'评论成功'}
                     alert(data.msg);
                     if(!data.code){
                         newData();
